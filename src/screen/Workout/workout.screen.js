@@ -14,8 +14,6 @@ export const WorkOutScreen = ({ navigation, route }) => {
   const { inWorkout, setWorkoutMode } = useContext(WorkoutContext);
   const [currSet, setCurrSet] = useState(1);
   const [currRep, setCurrRep] = useState(reps);
-  console.log(currRep);
-  console.log(inWorkout);
 
   const changeWorkoutMode = () => {
     setWorkoutMode(!inWorkout);
@@ -35,12 +33,13 @@ export const WorkOutScreen = ({ navigation, route }) => {
 
   if (currSet == sets && currRep == 0) {
     //Completed all the sets
+    setCurrSet(1);
     navigation.navigate("Home");
   } else if (currRep == 0) {
     setWorkoutMode(!inWorkout);
     setCurrRep(reps);
     setCurrSet(currSet + 1);
-    //Completed all the sets
+    //Completed all the reps
   }
 
   return (

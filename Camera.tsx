@@ -171,9 +171,9 @@ export default function CameraView({ changeRep, inWorkout, workout }) {
     let p1_y = 0;
     let p2_y = 0;
     if (poses != null && (poses.length > 0) & inWorkout) {
-      if (workout == "shoudler press") {
-        p1_y = poses[0].keypoints[4].y;
-        p2_y = poses[0].keypoints[10].y;
+      if (workout == "Shoulder Press") {
+        p1_y = poses[0].keypoints[10].y;
+        p2_y = poses[0].keypoints[4].y;
       } else if (workout == "squat") {
         p1_y = poses[0].keypoints[14].y;
         p2_y = poses[0].keypoints[12].y;
