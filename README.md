@@ -1,27 +1,9 @@
-# Overview
+# GymPT
 
-A quick demo for running [TFJS Pose Detection][posedetection] model
-([MoveNet.SinglePose.Ligntning][tfhub]) using
-[TFJS React Native][tfjs-react-native] in an Expo project. It supports both
-portrait and landscape mode with front and back camera. Only the keypoints are
-rendered in the demo.
+People often lose track of timing their rest periods between each set of exercises. Setting up a timer on your phone after every set of workout is not only inconvenient but also easy to forget, which frustrate many disciplined lifters.
 
-To run it locally:
+The application:
+1) Counts the reps of different types of workouts using pose-detection (tensorflow-js)
+2) Automatically sets up timers at the end of every sets
 
-```
-$ yarn
-$ yarn start
-```
-
-Then scan the QR code to open it in the `Expo Go` app.
-
-If the app crashes on startup, see [here][readme] for more info.
-
-<img src="screenshot_portrait.jpg" width="250">
-<img src="screenshot_landscape.jpg" width="500">
-
-[posedetection]: https://github.com/tensorflow/tfjs-models/tree/master/pose-detection
-[tfhub]: https://tfhub.dev/google/tfjs-model/movenet/singlepose/lightning/4
-[tfjs-react-native]: https://github.com/tensorflow/tfjs/tree/master/tfjs-react-native
-[screenshots]: https://photos.app.goo.gl/U972ww4HpaKPK6jEA
-[readme]: https://github.com/tensorflow/tfjs-examples/blob/master/react-native/README.md
+The application is designed to function like a personal trainare or a workout partner to help lifters have a more disciplined session in the gym.
