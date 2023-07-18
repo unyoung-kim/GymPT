@@ -7,3 +7,8 @@ The application:
 2) Automatically sets up timers at the end of every sets
 
 The application is designed to function like a personal trainare or a workout partner to help lifters have a more disciplined session in the gym.
+
+<p align="middle">
+  <img src="assets/img1.jpg" width="300" />
+  <img src="assets/img2.jpg" width="300" /> 
+</p>
